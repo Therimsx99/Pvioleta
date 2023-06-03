@@ -1,0 +1,68 @@
+<style>
+    p,h5{
+        font-family: cursive;
+    }
+    .upredi{
+        background: #0575E6;
+        cursor: pointer;
+        border: none;
+        width: 300px;
+        padding: 10px 22px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        border-radius: 12px;
+    }
+    .upredi:hover{
+        justify-content: center;
+        background:  #0f9b0f;
+        color: #fff;
+        font-family: cursive;
+    }
+    .delredi{
+        background: #0575E6;
+        cursor: pointer;
+        border: none;
+        width: 100px;
+        padding: 10px 22px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        border-radius: 12px;
+    }
+    .delredi:hover{
+       justify-content: center;
+        background:  #8E0E00;
+        color: #fff;
+        font-family: cursive; 
+    }
+</style>
+
+<main>
+    <div class="card mb-3" style="width: 38rem;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://onegamer.cl/wp-content/uploads/2021/12/logo-web-1.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Informacion</h5>
+                    <p class="card-text">Id: <p class="card-text"></p>{{@key}}</p>
+                    <p class="card-text">Marca: <p class="card-text"></p>{{marca}}</p>
+                    <p class="card-text">Modelo: <p class="card-text"></p>{{modelo}}</p>
+                    <p class="card-text">Estado: <p class="card-text"></p>{{estado}}</p>
+                    <p class="card-text">Antivirus: <p class="card-text">{{antivirus}}</p></p>
+                    <p class="card-text">Nero: <p class="card-text"></p>{{nero}}</p>
+                    <p class="card-text">WinRar: <p class="card-text"></p>{{winrar}}</p>
+                    <p class="card-text">WinDvD: <p class="card-text"></p>{{windvd}}</p>
+                    <a href="/actualizar" class="upredi">Actualizar</a>
+                    <button class="delredi">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

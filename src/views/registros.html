@@ -1,0 +1,62 @@
+<style>
+    th,td{
+        font-family: cursive;
+    }
+    .verre{
+        background: #1565C0;
+        cursor: pointer;
+        border: none;
+        padding: 10px 22px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        border-radius: 12px;
+    }
+    .verre:hover{
+        justify-content: center;
+        color: #fff;
+        background: #fe8c00;
+        font-family: cursive;
+    }
+</style>
+
+<main>
+    <table class="table bg-primary table-bordered">
+        <thead>
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Antivirus</th>
+            <th scope="col">Nero</th>
+            <th scope="col">WinRar</th>
+            <th scope="col">WinDvD</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        {{#if computadoras}}
+        <tbody>
+            {{#each computadoras}}
+            <tr>
+                <td>{{@key}}</td>
+                <td>{{marca}}</td>
+                <td>{{modelo}}</td>
+                <td>{{estado}}</td>
+                <td>{{antivirus}}</td>
+                <td>{{nero}}</td>
+                <td>{{winrar}}</td>
+                <td>{{windvd}}</td>
+                <td><a href="/delete-comp/{{@key}}" class="verre bg-black">Eliminar</a></td>
+                <td><a href="/actualizar/{{@key}}" class="verre bg-black">Actualizar</a></td>
+                
+            </tr>
+            {{/each}}
+            
+        </tbody>
+        {{/if}}
+    </table>
+</main>
